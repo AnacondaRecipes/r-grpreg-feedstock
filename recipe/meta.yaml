@@ -10,8 +10,8 @@ package:
 source:
   fn: grpreg_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/grpreg_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/grpreg/grpreg_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/grpreg_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/grpreg/grpreg_{{ version }}.tar.gz
   sha256: 38d5f277b8fbbdc3a760277c2372ae993f7bda4f0198338609ccc91110575c10
 
 
