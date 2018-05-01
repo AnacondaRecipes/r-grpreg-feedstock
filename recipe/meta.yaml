@@ -1,4 +1,4 @@
-{% set version = '3.1-2' %}
+{% set version = '3.1-3' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,18 +12,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/grpreg_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/grpreg/grpreg_{{ version }}.tar.gz
-  sha256: 38d5f277b8fbbdc3a760277c2372ae993f7bda4f0198338609ccc91110575c10
-
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
+  sha256: 47cb1b45761dd5c82fd0ee49a21c16046db4da6c1e8e91fc52436dea25ecaf44
 
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 0
-
 
   # This is required to make R link correctly on Linux.
   rpaths:
@@ -78,8 +72,8 @@ extra:
 
 # Package: grpreg
 # Title: Regularization Paths for Regression Models with Grouped Covariates
-# Version: 3.1-2
-# Date: 2017-07-05
+# Version: 3.1-3
+# Date: 2018-04-07
 # Author: Patrick Breheny [aut, cre], Yaohui Zeng [ctb]
 # Maintainer: Patrick Breheny <patrick-breheny@uiowa.edu>
 # Depends: R (>= 3.1.0), Matrix
@@ -89,9 +83,9 @@ extra:
 # BugReports: http://github.com/pbreheny/grpreg/issues
 # License: GPL-3
 # NeedsCompilation: yes
-# Packaged: 2017-07-05 21:31:51 UTC; pbreheny
+# Packaged: 2018-04-07 12:38:47 UTC; pbreheny
 # Repository: CRAN
-# Date/Publication: 2017-07-06 10:19:31 UTC
+# Date/Publication: 2018-04-08 11:13:01 UTC
 
 # See
 # http://docs.continuum.io/conda/build.html for
